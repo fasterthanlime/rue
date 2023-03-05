@@ -1,0 +1,8427 @@
+{
+  "aaData": [
+    [
+      0,
+      "read",
+      "0x00",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "size_t count"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      621
+    ],
+    [
+      1,
+      "write",
+      "0x01",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "size_t count"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      646
+    ],
+    [
+      2,
+      "open",
+      "0x02",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      1330
+    ],
+    [
+      3,
+      "close",
+      "0x03",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      1437
+    ],
+    [
+      4,
+      "stat",
+      "0x04",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct stat __user * statbuf"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/stat.c",
+      409
+    ],
+    [
+      5,
+      "fstat",
+      "0x05",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "struct stat __user * statbuf"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/stat.c",
+      447
+    ],
+    [
+      6,
+      "lstat",
+      "0x06",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct stat __user * statbuf"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/stat.c",
+      420
+    ],
+    [
+      7,
+      "poll",
+      "0x07",
+      {
+        "def": null,
+        "type": "struct pollfd __user * ufds"
+      },
+      {
+        "def": null,
+        "type": "unsigned int nfds"
+      },
+      {
+        "def": null,
+        "type": "int timeout_msecs"
+      },
+      {},
+      {},
+      {},
+      "fs/select.c",
+      1068
+    ],
+    [
+      8,
+      "lseek",
+      "0x08",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "off_t offset"
+      },
+      {
+        "def": null,
+        "type": "unsigned int whence"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      311
+    ],
+    [
+      9,
+      "mmap",
+      "0x09",
+      {
+        "def": null,
+        "type": "unsigned long addr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long prot"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long off"
+      },
+      "arch/x86/kernel/sys_x86_64.c",
+      86
+    ],
+    [
+      10,
+      "mprotect",
+      "0x0a",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long prot"
+      },
+      {},
+      {},
+      {},
+      "mm/mprotect.c",
+      815
+    ],
+    [
+      11,
+      "munmap",
+      "0x0b",
+      {
+        "def": null,
+        "type": "unsigned long addr"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/mmap.c",
+      2801
+    ],
+    [
+      12,
+      "brk",
+      "0x0c",
+      {
+        "def": null,
+        "type": "unsigned long brk"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "mm/mmap.c",
+      170
+    ],
+    [
+      13,
+      "rt_sigaction",
+      "0x0d",
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "const struct sigaction __user * act"
+      },
+      {
+        "def": null,
+        "type": "struct sigaction __user * oact"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      4411
+    ],
+    [
+      14,
+      "rt_sigprocmask",
+      "0x0e",
+      {
+        "def": null,
+        "type": "int how"
+      },
+      {
+        "def": null,
+        "type": "sigset_t __user * nset"
+      },
+      {
+        "def": null,
+        "type": "sigset_t __user * oset"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      3142
+    ],
+    [
+      15,
+      "rt_sigreturn",
+      "0x0f",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "arch/x86/kernel/signal_64.c",
+      243
+    ],
+    [
+      16,
+      "ioctl",
+      "0x10",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg"
+      },
+      {},
+      {},
+      {},
+      "fs/ioctl.c",
+      856
+    ],
+    [
+      17,
+      "pread64",
+      "0x11",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "size_t count"
+      },
+      {
+        "def": null,
+        "type": "loff_t pos"
+      },
+      {},
+      {},
+      "fs/read_write.c",
+      672
+    ],
+    [
+      18,
+      "pwrite64",
+      "0x12",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "size_t count"
+      },
+      {
+        "def": null,
+        "type": "loff_t pos"
+      },
+      {},
+      {},
+      "fs/read_write.c",
+      706
+    ],
+    [
+      19,
+      "readv",
+      "0x13",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      1041
+    ],
+    [
+      20,
+      "writev",
+      "0x14",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      1047
+    ],
+    [
+      21,
+      "access",
+      "0x15",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "int mode"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      503
+    ],
+    [
+      22,
+      "pipe",
+      "0x16",
+      {
+        "def": null,
+        "type": "int __user * fildes"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/pipe.c",
+      1031
+    ],
+    [
+      23,
+      "select",
+      "0x17",
+      {
+        "def": null,
+        "type": "int n"
+      },
+      {
+        "def": null,
+        "type": "fd_set __user * inp"
+      },
+      {
+        "def": null,
+        "type": "fd_set __user * outp"
+      },
+      {
+        "def": null,
+        "type": "fd_set __user * exp"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_old_timeval __user * tvp"
+      },
+      {},
+      "fs/select.c",
+      726
+    ],
+    [
+      24,
+      "sched_yield",
+      "0x18",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8446
+    ],
+    [
+      25,
+      "mremap",
+      "0x19",
+      {
+        "def": null,
+        "type": "unsigned long addr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long old_len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long new_len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned long new_addr"
+      },
+      {},
+      "mm/mremap.c",
+      889
+    ],
+    [
+      26,
+      "msync",
+      "0x1a",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      "mm/msync.c",
+      32
+    ],
+    [
+      27,
+      "mincore",
+      "0x1b",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned char __user * vec"
+      },
+      {},
+      {},
+      {},
+      "mm/mincore.c",
+      232
+    ],
+    [
+      28,
+      "madvise",
+      "0x1c",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len_in"
+      },
+      {
+        "def": null,
+        "type": "int behavior"
+      },
+      {},
+      {},
+      {},
+      "mm/madvise.c",
+      1455
+    ],
+    [
+      29,
+      "shmget",
+      "0x1d",
+      {
+        "def": null,
+        "type": "key_t key"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {
+        "def": null,
+        "type": "int shmflg"
+      },
+      {},
+      {},
+      {},
+      "ipc/shm.c",
+      850
+    ],
+    [
+      30,
+      "shmat",
+      "0x1e",
+      {
+        "def": null,
+        "type": "int shmid"
+      },
+      {
+        "def": null,
+        "type": "char __user * shmaddr"
+      },
+      {
+        "def": null,
+        "type": "int shmflg"
+      },
+      {},
+      {},
+      {},
+      "ipc/shm.c",
+      1696
+    ],
+    [
+      31,
+      "shmctl",
+      "0x1f",
+      {
+        "def": null,
+        "type": "int shmid"
+      },
+      {
+        "def": null,
+        "type": "int cmd"
+      },
+      {
+        "def": null,
+        "type": "struct shmid_ds __user * buf"
+      },
+      {},
+      {},
+      {},
+      "ipc/shm.c",
+      1299
+    ],
+    [
+      32,
+      "dup",
+      "0x20",
+      {
+        "def": null,
+        "type": "unsigned int fildes"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/file.c",
+      1269
+    ],
+    [
+      33,
+      "dup2",
+      "0x21",
+      {
+        "def": null,
+        "type": "unsigned int oldfd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int newfd"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/file.c",
+      1254
+    ],
+    [
+      34,
+      "pause",
+      "0x22",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      4604
+    ],
+    [
+      35,
+      "nanosleep",
+      "0x23",
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * rqtp"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * rmtp"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/hrtimer.c",
+      2118
+    ],
+    [
+      36,
+      "getitimer",
+      "0x24",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_old_itimerval __user * value"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/itimer.c",
+      113
+    ],
+    [
+      37,
+      "alarm",
+      "0x25",
+      {
+        "def": null,
+        "type": "unsigned int seconds"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/itimer.c",
+      306
+    ],
+    [
+      38,
+      "setitimer",
+      "0x26",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_old_itimerval __user * value"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_old_itimerval __user * ovalue"
+      },
+      {},
+      {},
+      {},
+      "kernel/time/itimer.c",
+      332
+    ],
+    [
+      39,
+      "getpid",
+      "0x27",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      940
+    ],
+    [
+      40,
+      "sendfile",
+      "0x28",
+      {
+        "def": null,
+        "type": "int out_fd"
+      },
+      {
+        "def": null,
+        "type": "int in_fd"
+      },
+      {
+        "def": null,
+        "type": "loff_t __user * offset"
+      },
+      {
+        "def": null,
+        "type": "size_t count"
+      },
+      {},
+      {},
+      "fs/read_write.c",
+      1309
+    ],
+    [
+      41,
+      "socket",
+      "0x29",
+      {
+        "def": null,
+        "type": "int family"
+      },
+      {
+        "def": null,
+        "type": "int type"
+      },
+      {
+        "def": null,
+        "type": "int protocol"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      1650
+    ],
+    [
+      42,
+      "connect",
+      "0x2a",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * uservaddr"
+      },
+      {
+        "def": null,
+        "type": "int addrlen"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2003
+    ],
+    [
+      43,
+      "accept",
+      "0x2b",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * upeer_sockaddr"
+      },
+      {
+        "def": null,
+        "type": "int __user * upeer_addrlen"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      1944
+    ],
+    [
+      44,
+      "sendto",
+      "0x2c",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "void __user * buff"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * addr"
+      },
+      {
+        "def": null,
+        "type": "int addr_len"
+      },
+      "net/socket.c",
+      2128
+    ],
+    [
+      45,
+      "recvfrom",
+      "0x2d",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "void __user * ubuf"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * addr"
+      },
+      {
+        "def": null,
+        "type": "int __user * addr_len"
+      },
+      "net/socket.c",
+      2186
+    ],
+    [
+      46,
+      "sendmsg",
+      "0x2e",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct user_msghdr __user * msg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2569
+    ],
+    [
+      47,
+      "recvmsg",
+      "0x2f",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct user_msghdr __user * msg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2777
+    ],
+    [
+      48,
+      "shutdown",
+      "0x30",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int how"
+      },
+      {},
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2339
+    ],
+    [
+      49,
+      "bind",
+      "0x31",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * umyaddr"
+      },
+      {
+        "def": null,
+        "type": "int addrlen"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      1788
+    ],
+    [
+      50,
+      "listen",
+      "0x32",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int backlog"
+      },
+      {},
+      {},
+      {},
+      {},
+      "net/socket.c",
+      1820
+    ],
+    [
+      51,
+      "getsockname",
+      "0x33",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * usockaddr"
+      },
+      {
+        "def": null,
+        "type": "int __user * usockaddr_len"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2041
+    ],
+    [
+      52,
+      "getpeername",
+      "0x34",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * usockaddr"
+      },
+      {
+        "def": null,
+        "type": "int __user * usockaddr_len"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2077
+    ],
+    [
+      53,
+      "socketpair",
+      "0x35",
+      {
+        "def": null,
+        "type": "int family"
+      },
+      {
+        "def": null,
+        "type": "int type"
+      },
+      {
+        "def": null,
+        "type": "int protocol"
+      },
+      {
+        "def": null,
+        "type": "int __user * usockvec"
+      },
+      {},
+      {},
+      "net/socket.c",
+      1751
+    ],
+    [
+      54,
+      "setsockopt",
+      "0x36",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int level"
+      },
+      {
+        "def": null,
+        "type": "int optname"
+      },
+      {
+        "def": null,
+        "type": "char __user * optval"
+      },
+      {
+        "def": null,
+        "type": "int optlen"
+      },
+      {},
+      "net/socket.c",
+      2257
+    ],
+    [
+      55,
+      "getsockopt",
+      "0x37",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int level"
+      },
+      {
+        "def": null,
+        "type": "int optname"
+      },
+      {
+        "def": null,
+        "type": "char __user * optval"
+      },
+      {
+        "def": null,
+        "type": "int __user * optlen"
+      },
+      {},
+      "net/socket.c",
+      2305
+    ],
+    [
+      56,
+      "clone",
+      "0x38",
+      {
+        "def": null,
+        "type": "unsigned long clone_flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned long newsp"
+      },
+      {
+        "def": null,
+        "type": "int __user * parent_tidptr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long tls"
+      },
+      {
+        "def": null,
+        "type": "int __user * child_tidptr"
+      },
+      {},
+      "kernel/fork.c",
+      2790
+    ],
+    [
+      57,
+      "fork",
+      "0x39",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/fork.c",
+      2761
+    ],
+    [
+      58,
+      "vfork",
+      "0x3a",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/fork.c",
+      2777
+    ],
+    [
+      59,
+      "execve",
+      "0x3b",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * argv"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * envp"
+      },
+      {},
+      {},
+      {},
+      "fs/exec.c",
+      2101
+    ],
+    [
+      60,
+      "exit",
+      "0x3c",
+      {
+        "def": null,
+        "type": "int error_code"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/exit.c",
+      977
+    ],
+    [
+      61,
+      "wait4",
+      "0x3d",
+      {
+        "def": null,
+        "type": "pid_t upid"
+      },
+      {
+        "def": null,
+        "type": "int __user * stat_addr"
+      },
+      {
+        "def": null,
+        "type": "int options"
+      },
+      {
+        "def": null,
+        "type": "struct rusage __user * ru"
+      },
+      {},
+      {},
+      "kernel/exit.c",
+      1792
+    ],
+    [
+      62,
+      "kill",
+      "0x3e",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3772
+    ],
+    [
+      63,
+      "uname",
+      "0x3f",
+      {
+        "def": null,
+        "type": "struct new_utsname __user * name"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1288
+    ],
+    [
+      64,
+      "semget",
+      "0x40",
+      {
+        "def": null,
+        "type": "key_t key"
+      },
+      {
+        "def": null,
+        "type": "int nsems"
+      },
+      {
+        "def": null,
+        "type": "int semflg"
+      },
+      {},
+      {},
+      {},
+      "ipc/sem.c",
+      624
+    ],
+    [
+      65,
+      "semop",
+      "0x41",
+      {
+        "def": null,
+        "type": "int semid"
+      },
+      {
+        "def": null,
+        "type": "struct sembuf __user * tsops"
+      },
+      {
+        "def": null,
+        "type": "unsigned nsops"
+      },
+      {},
+      {},
+      {},
+      "ipc/sem.c",
+      2298
+    ],
+    [
+      66,
+      "semctl",
+      "0x42",
+      {
+        "def": null,
+        "type": "int semid"
+      },
+      {
+        "def": null,
+        "type": "int semnum"
+      },
+      {
+        "def": null,
+        "type": "int cmd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg"
+      },
+      {},
+      {},
+      "ipc/sem.c",
+      1705
+    ],
+    [
+      67,
+      "shmdt",
+      "0x43",
+      {
+        "def": null,
+        "type": "char __user * shmaddr"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "ipc/shm.c",
+      1837
+    ],
+    [
+      68,
+      "msgget",
+      "0x44",
+      {
+        "def": null,
+        "type": "key_t key"
+      },
+      {
+        "def": null,
+        "type": "int msgflg"
+      },
+      {},
+      {},
+      {},
+      {},
+      "ipc/msg.c",
+      315
+    ],
+    [
+      69,
+      "msgsnd",
+      "0x45",
+      {
+        "def": null,
+        "type": "int msqid"
+      },
+      {
+        "def": null,
+        "type": "struct msgbuf __user * msgp"
+      },
+      {
+        "def": null,
+        "type": "size_t msgsz"
+      },
+      {
+        "def": null,
+        "type": "int msgflg"
+      },
+      {},
+      {},
+      "ipc/msg.c",
+      971
+    ],
+    [
+      70,
+      "msgrcv",
+      "0x46",
+      {
+        "def": null,
+        "type": "int msqid"
+      },
+      {
+        "def": null,
+        "type": "struct msgbuf __user * msgp"
+      },
+      {
+        "def": null,
+        "type": "size_t msgsz"
+      },
+      {
+        "def": null,
+        "type": "long msgtyp"
+      },
+      {
+        "def": null,
+        "type": "int msgflg"
+      },
+      {},
+      "ipc/msg.c",
+      1270
+    ],
+    [
+      71,
+      "msgctl",
+      "0x47",
+      {
+        "def": null,
+        "type": "int msqid"
+      },
+      {
+        "def": null,
+        "type": "int cmd"
+      },
+      {
+        "def": null,
+        "type": "struct msqid_ds __user * buf"
+      },
+      {},
+      {},
+      {},
+      "ipc/msg.c",
+      640
+    ],
+    [
+      72,
+      "fcntl",
+      "0x48",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg"
+      },
+      {},
+      {},
+      {},
+      "fs/fcntl.c",
+      439
+    ],
+    [
+      73,
+      "flock",
+      "0x49",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/locks.c",
+      2084
+    ],
+    [
+      74,
+      "fsync",
+      "0x4a",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/sync.c",
+      218
+    ],
+    [
+      75,
+      "fdatasync",
+      "0x4b",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/sync.c",
+      223
+    ],
+    [
+      76,
+      "truncate",
+      "0x4c",
+      {
+        "def": null,
+        "type": "const char __user * path"
+      },
+      {
+        "def": null,
+        "type": "long length"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      144
+    ],
+    [
+      77,
+      "ftruncate",
+      "0x4d",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long length"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      202
+    ],
+    [
+      78,
+      "getdents",
+      "0x4e",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "struct linux_dirent __user * dirent"
+      },
+      {
+        "def": null,
+        "type": "unsigned int count"
+      },
+      {},
+      {},
+      {},
+      "fs/readdir.c",
+      271
+    ],
+    [
+      79,
+      "getcwd",
+      "0x4f",
+      {
+        "def": null,
+        "type": "char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "unsigned long size"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/d_path.c",
+      411
+    ],
+    [
+      80,
+      "chdir",
+      "0x50",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      508
+    ],
+    [
+      81,
+      "fchdir",
+      "0x51",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      534
+    ],
+    [
+      82,
+      "rename",
+      "0x52",
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4974
+    ],
+    [
+      83,
+      "mkdir",
+      "0x53",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4079
+    ],
+    [
+      84,
+      "rmdir",
+      "0x54",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4199
+    ],
+    [
+      85,
+      "creat",
+      "0x55",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      1396
+    ],
+    [
+      86,
+      "link",
+      "0x56",
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4632
+    ],
+    [
+      87,
+      "unlink",
+      "0x57",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4366
+    ],
+    [
+      88,
+      "symlink",
+      "0x58",
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4450
+    ],
+    [
+      89,
+      "readlink",
+      "0x59",
+      {
+        "def": null,
+        "type": "const char __user * path"
+      },
+      {
+        "def": null,
+        "type": "char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "int bufsiz"
+      },
+      {},
+      {},
+      {},
+      "fs/stat.c",
+      501
+    ],
+    [
+      90,
+      "chmod",
+      "0x5a",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      661
+    ],
+    [
+      91,
+      "fchmod",
+      "0x5b",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      625
+    ],
+    [
+      92,
+      "chown",
+      "0x5c",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "uid_t user"
+      },
+      {
+        "def": null,
+        "type": "gid_t group"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      785
+    ],
+    [
+      93,
+      "fchown",
+      "0x5d",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "uid_t user"
+      },
+      {
+        "def": null,
+        "type": "gid_t group"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      821
+    ],
+    [
+      94,
+      "lchown",
+      "0x5e",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "uid_t user"
+      },
+      {
+        "def": null,
+        "type": "gid_t group"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      790
+    ],
+    [
+      95,
+      "umask",
+      "0x5f",
+      {
+        "def": null,
+        "type": "int mask"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1866
+    ],
+    [
+      96,
+      "gettimeofday",
+      "0x60",
+      {
+        "def": null,
+        "type": "struct __kernel_old_timeval __user * tv"
+      },
+      {
+        "def": null,
+        "type": "struct timezone __user * tz"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/time.c",
+      140
+    ],
+    [
+      97,
+      "getrlimit",
+      "0x61",
+      {
+        "def": null,
+        "type": "unsigned int resource"
+      },
+      {
+        "def": null,
+        "type": "struct rlimit __user * rlim"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1500
+    ],
+    [
+      98,
+      "getrusage",
+      "0x62",
+      {
+        "def": null,
+        "type": "int who"
+      },
+      {
+        "def": null,
+        "type": "struct rusage __user * ru"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1840
+    ],
+    [
+      99,
+      "sysinfo",
+      "0x63",
+      {
+        "def": null,
+        "type": "struct sysinfo __user * info"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      2718
+    ],
+    [
+      100,
+      "times",
+      "0x64",
+      {
+        "def": null,
+        "type": "struct tms __user * tbuf"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1005
+    ],
+    [
+      101,
+      "ptrace",
+      "0x65",
+      {
+        "def": null,
+        "type": "long request"
+      },
+      {
+        "def": null,
+        "type": "long pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned long addr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long data"
+      },
+      {},
+      {},
+      "kernel/ptrace.c",
+      1269
+    ],
+    [
+      102,
+      "getuid",
+      "0x66",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      968
+    ],
+    [
+      103,
+      "syslog",
+      "0x67",
+      {
+        "def": null,
+        "type": "int type"
+      },
+      {
+        "def": null,
+        "type": "char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "int len"
+      },
+      {},
+      {},
+      {},
+      "kernel/printk/printk.c",
+      1853
+    ],
+    [
+      104,
+      "getgid",
+      "0x68",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      980
+    ],
+    [
+      105,
+      "setuid",
+      "0x69",
+      {
+        "def": null,
+        "type": "uid_t uid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      650
+    ],
+    [
+      106,
+      "setgid",
+      "0x6a",
+      {
+        "def": null,
+        "type": "gid_t gid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      467
+    ],
+    [
+      107,
+      "geteuid",
+      "0x6b",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      974
+    ],
+    [
+      108,
+      "getegid",
+      "0x6c",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      986
+    ],
+    [
+      109,
+      "setpgid",
+      "0x6d",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "pid_t pgid"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1055
+    ],
+    [
+      110,
+      "getppid",
+      "0x6e",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      957
+    ],
+    [
+      111,
+      "getpgrp",
+      "0x6f",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1161
+    ],
+    [
+      112,
+      "setsid",
+      "0x70",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1240
+    ],
+    [
+      113,
+      "setreuid",
+      "0x71",
+      {
+        "def": null,
+        "type": "uid_t ruid"
+      },
+      {
+        "def": null,
+        "type": "uid_t euid"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      587
+    ],
+    [
+      114,
+      "setregid",
+      "0x72",
+      {
+        "def": null,
+        "type": "gid_t rgid"
+      },
+      {
+        "def": null,
+        "type": "gid_t egid"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      421
+    ],
+    [
+      115,
+      "getgroups",
+      "0x73",
+      {
+        "def": null,
+        "type": "int gidsetsize"
+      },
+      {
+        "def": null,
+        "type": "gid_t __user * grouplist"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/groups.c",
+      161
+    ],
+    [
+      116,
+      "setgroups",
+      "0x74",
+      {
+        "def": null,
+        "type": "int gidsetsize"
+      },
+      {
+        "def": null,
+        "type": "gid_t __user * grouplist"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/groups.c",
+      198
+    ],
+    [
+      117,
+      "setresuid",
+      "0x75",
+      {
+        "def": null,
+        "type": "uid_t ruid"
+      },
+      {
+        "def": null,
+        "type": "uid_t euid"
+      },
+      {
+        "def": null,
+        "type": "uid_t suid"
+      },
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      730
+    ],
+    [
+      118,
+      "getresuid",
+      "0x76",
+      {
+        "def": null,
+        "type": "uid_t __user * ruidp"
+      },
+      {
+        "def": null,
+        "type": "uid_t __user * euidp"
+      },
+      {
+        "def": null,
+        "type": "uid_t __user * suidp"
+      },
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      735
+    ],
+    [
+      119,
+      "setresgid",
+      "0x77",
+      {
+        "def": null,
+        "type": "gid_t rgid"
+      },
+      {
+        "def": null,
+        "type": "gid_t egid"
+      },
+      {
+        "def": null,
+        "type": "gid_t sgid"
+      },
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      813
+    ],
+    [
+      120,
+      "getresgid",
+      "0x78",
+      {
+        "def": null,
+        "type": "gid_t __user * rgidp"
+      },
+      {
+        "def": null,
+        "type": "gid_t __user * egidp"
+      },
+      {
+        "def": null,
+        "type": "gid_t __user * sgidp"
+      },
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      818
+    ],
+    [
+      121,
+      "getpgid",
+      "0x79",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1154
+    ],
+    [
+      122,
+      "setfsuid",
+      "0x7a",
+      {
+        "def": null,
+        "type": "uid_t uid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      881
+    ],
+    [
+      123,
+      "setfsgid",
+      "0x7b",
+      {
+        "def": null,
+        "type": "gid_t gid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      925
+    ],
+    [
+      124,
+      "getsid",
+      "0x7c",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1168
+    ],
+    [
+      125,
+      "capget",
+      "0x7d",
+      {
+        "def": null,
+        "type": "cap_user_header_t header"
+      },
+      {
+        "def": null,
+        "type": "cap_user_data_t dataptr"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/capability.c",
+      148
+    ],
+    [
+      126,
+      "capset",
+      "0x7e",
+      {
+        "def": null,
+        "type": "cap_user_header_t header"
+      },
+      {
+        "def": null,
+        "type": "const cap_user_data_t data"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/capability.c",
+      222
+    ],
+    [
+      127,
+      "rt_sigpending",
+      "0x7f",
+      {
+        "def": null,
+        "type": "sigset_t __user * uset"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3214
+    ],
+    [
+      128,
+      "rt_sigtimedwait",
+      "0x80",
+      {
+        "def": null,
+        "type": "const sigset_t __user * uthese"
+      },
+      {
+        "def": null,
+        "type": "siginfo_t __user * uinfo"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * uts"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      3628
+    ],
+    [
+      129,
+      "rt_sigqueueinfo",
+      "0x81",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "siginfo_t __user * uinfo"
+      },
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3997
+    ],
+    [
+      130,
+      "rt_sigsuspend",
+      "0x82",
+      {
+        "def": null,
+        "type": "sigset_t __user * unewset"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      4634
+    ],
+    [
+      131,
+      "sigaltstack",
+      "0x83",
+      {
+        "def": null,
+        "type": "const stack_t __user * uss"
+      },
+      {
+        "def": null,
+        "type": "stack_t __user * uoss"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      4228
+    ],
+    [
+      132,
+      "utime",
+      "0x84",
+      {
+        "def": null,
+        "type": "char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct utimbuf __user * times"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/utimes.c",
+      214
+    ],
+    [
+      133,
+      "mknod",
+      "0x85",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {
+        "def": null,
+        "type": "unsigned dev"
+      },
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      3996
+    ],
+    [
+      134,
+      "uselib",
+      "0x86",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      135,
+      "personality",
+      "0x87",
+      {
+        "def": null,
+        "type": "unsigned int personality"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/exec_domain.c",
+      38
+    ],
+    [
+      136,
+      "ustat",
+      "0x88",
+      {
+        "def": null,
+        "type": "unsigned dev"
+      },
+      {
+        "def": null,
+        "type": "struct ustat __user * ubuf"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/statfs.c",
+      248
+    ],
+    [
+      137,
+      "statfs",
+      "0x89",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "struct statfs __user * buf"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/statfs.c",
+      192
+    ],
+    [
+      138,
+      "fstatfs",
+      "0x8a",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "struct statfs __user * buf"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/statfs.c",
+      213
+    ],
+    [
+      139,
+      "sysfs",
+      "0x8b",
+      {
+        "def": null,
+        "type": "int option"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg1"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg2"
+      },
+      {},
+      {},
+      {},
+      "fs/filesystems.c",
+      191
+    ],
+    [
+      140,
+      "getpriority",
+      "0x8c",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "int who"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      281
+    ],
+    [
+      141,
+      "setpriority",
+      "0x8d",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "int who"
+      },
+      {
+        "def": null,
+        "type": "int niceval"
+      },
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      211
+    ],
+    [
+      142,
+      "sched_setparam",
+      "0x8e",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "struct sched_param __user * param"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      7960
+    ],
+    [
+      143,
+      "sched_getparam",
+      "0x8f",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "struct sched_param __user * param"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8043
+    ],
+    [
+      144,
+      "sched_setscheduler",
+      "0x90",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int policy"
+      },
+      {
+        "def": null,
+        "type": "struct sched_param __user * param"
+      },
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      7945
+    ],
+    [
+      145,
+      "sched_getscheduler",
+      "0x91",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8014
+    ],
+    [
+      146,
+      "sched_get_priority_max",
+      "0x92",
+      {
+        "def": null,
+        "type": "int policy"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8884
+    ],
+    [
+      147,
+      "sched_get_priority_min",
+      "0x93",
+      {
+        "def": null,
+        "type": "int policy"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8911
+    ],
+    [
+      148,
+      "sched_rr_get_interval",
+      "0x94",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * interval"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8976
+    ],
+    [
+      149,
+      "mlock",
+      "0x95",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/mlock.c",
+      614
+    ],
+    [
+      150,
+      "munlock",
+      "0x96",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/mlock.c",
+      632
+    ],
+    [
+      151,
+      "mlockall",
+      "0x97",
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "mm/mlock.c",
+      697
+    ],
+    [
+      152,
+      "munlockall",
+      "0x98",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "mm/mlock.c",
+      726
+    ],
+    [
+      153,
+      "vhangup",
+      "0x99",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      1472
+    ],
+    [
+      154,
+      "modify_ldt",
+      "0x9a",
+      {
+        "def": null,
+        "type": "int func"
+      },
+      {
+        "def": null,
+        "type": "void __user * ptr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long bytecount"
+      },
+      {},
+      {},
+      {},
+      "arch/x86/kernel/ldt.c",
+      665
+    ],
+    [
+      155,
+      "pivot_root",
+      "0x9b",
+      {
+        "def": null,
+        "type": "const char __user * new_root"
+      },
+      {
+        "def": null,
+        "type": "const char __user * put_old"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/namespace.c",
+      3974
+    ],
+    [
+      156,
+      "_sysctl",
+      "0x9c",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "arch/x86/entry/common.c",
+      250
+    ],
+    [
+      157,
+      "prctl",
+      "0x9d",
+      {
+        "def": null,
+        "type": "int option"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg2"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg3"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg4"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg5"
+      },
+      {},
+      "kernel/sys.c",
+      2353
+    ],
+    [
+      158,
+      "arch_prctl",
+      "0x9e",
+      {
+        "def": null,
+        "type": "int option"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg2"
+      },
+      {},
+      {},
+      {},
+      {},
+      "arch/x86/kernel/process_32.c",
+      220
+    ],
+    [
+      159,
+      "adjtimex",
+      "0x9f",
+      {
+        "def": null,
+        "type": "struct __kernel_timex __user * txc_p"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/time.c",
+      269
+    ],
+    [
+      160,
+      "setrlimit",
+      "0xa0",
+      {
+        "def": null,
+        "type": "unsigned int resource"
+      },
+      {
+        "def": null,
+        "type": "struct rlimit __user * rlim"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1713
+    ],
+    [
+      161,
+      "chroot",
+      "0xa1",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/open.c",
+      556
+    ],
+    [
+      162,
+      "sync",
+      "0xa2",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/sync.c",
+      111
+    ],
+    [
+      163,
+      "acct",
+      "0xa3",
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/acct.c",
+      292
+    ],
+    [
+      164,
+      "settimeofday",
+      "0xa4",
+      {
+        "def": null,
+        "type": "struct __kernel_old_timeval __user * tv"
+      },
+      {
+        "def": null,
+        "type": "struct timezone __user * tz"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/time.c",
+      199
+    ],
+    [
+      165,
+      "mount",
+      "0xa5",
+      {
+        "def": null,
+        "type": "char __user * dev_name"
+      },
+      {
+        "def": null,
+        "type": "char __user * dir_name"
+      },
+      {
+        "def": null,
+        "type": "char __user * type"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {
+        "def": null,
+        "type": "void __user * data"
+      },
+      {},
+      "fs/namespace.c",
+      3674
+    ],
+    [
+      166,
+      "umount2",
+      "0xa6",
+      {
+        "def": null,
+        "type": "char __user * name"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/namespace.c",
+      1933
+    ],
+    [
+      167,
+      "swapon",
+      "0xa7",
+      {
+        "def": null,
+        "type": "const char __user * specialfile"
+      },
+      {
+        "def": null,
+        "type": "int swap_flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/swapfile.c",
+      2984
+    ],
+    [
+      168,
+      "swapoff",
+      "0xa8",
+      {
+        "def": null,
+        "type": "const char __user * specialfile"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "mm/swapfile.c",
+      2389
+    ],
+    [
+      169,
+      "reboot",
+      "0xa9",
+      {
+        "def": null,
+        "type": "int magic1"
+      },
+      {
+        "def": null,
+        "type": "int magic2"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "void __user * arg"
+      },
+      {},
+      {},
+      "kernel/reboot.c",
+      700
+    ],
+    [
+      170,
+      "sethostname",
+      "0xaa",
+      {
+        "def": null,
+        "type": "char __user * name"
+      },
+      {
+        "def": null,
+        "type": "int len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1356
+    ],
+    [
+      171,
+      "setdomainname",
+      "0xab",
+      {
+        "def": null,
+        "type": "char __user * name"
+      },
+      {
+        "def": null,
+        "type": "int len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      1410
+    ],
+    [
+      172,
+      "iopl",
+      "0xac",
+      {
+        "def": null,
+        "type": "unsigned int level"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "arch/x86/kernel/ioport.c",
+      173
+    ],
+    [
+      173,
+      "ioperm",
+      "0xad",
+      {
+        "def": null,
+        "type": "unsigned long from"
+      },
+      {
+        "def": null,
+        "type": "unsigned long num"
+      },
+      {
+        "def": null,
+        "type": "int turn_on"
+      },
+      {},
+      {},
+      {},
+      "arch/x86/kernel/ioport.c",
+      152
+    ],
+    [
+      174,
+      "create_module",
+      "0xae",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      175,
+      "init_module",
+      "0xaf",
+      {
+        "def": null,
+        "type": "void __user * umod"
+      },
+      {
+        "def": null,
+        "type": "unsigned long len"
+      },
+      {
+        "def": null,
+        "type": "const char __user * uargs"
+      },
+      {},
+      {},
+      {},
+      "kernel/module/main.c",
+      2919
+    ],
+    [
+      176,
+      "delete_module",
+      "0xb0",
+      {
+        "def": null,
+        "type": "const char __user * name_user"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/module/main.c",
+      693
+    ],
+    [
+      177,
+      "get_kernel_syms",
+      "0xb1",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      178,
+      "query_module",
+      "0xb2",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      179,
+      "quotactl",
+      "0xb3",
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * special"
+      },
+      {
+        "def": null,
+        "type": "qid_t id"
+      },
+      {
+        "def": null,
+        "type": "void __user * addr"
+      },
+      {},
+      {},
+      "fs/quota/quota.c",
+      916
+    ],
+    [
+      180,
+      "nfsservctl",
+      "0xb4",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      181,
+      "getpmsg",
+      "0xb5",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      182,
+      "putpmsg",
+      "0xb6",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      183,
+      "afs_syscall",
+      "0xb7",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      184,
+      "tuxcall",
+      "0xb8",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      185,
+      "security",
+      "0xb9",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      186,
+      "gettid",
+      "0xba",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      946
+    ],
+    [
+      187,
+      "readahead",
+      "0xbb",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "loff_t offset"
+      },
+      {
+        "def": null,
+        "type": "size_t count"
+      },
+      {},
+      {},
+      {},
+      "mm/readahead.c",
+      761
+    ],
+    [
+      188,
+      "setxattr",
+      "0xbc",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "const void __user * value"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      "fs/xattr.c",
+      662
+    ],
+    [
+      189,
+      "lsetxattr",
+      "0xbd",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "const void __user * value"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      "fs/xattr.c",
+      669
+    ],
+    [
+      190,
+      "fsetxattr",
+      "0xbe",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "const void __user * value"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      "fs/xattr.c",
+      676
+    ],
+    [
+      191,
+      "getxattr",
+      "0xbf",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "void __user * value"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      "fs/xattr.c",
+      776
+    ],
+    [
+      192,
+      "lgetxattr",
+      "0xc0",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "void __user * value"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      "fs/xattr.c",
+      782
+    ],
+    [
+      193,
+      "fgetxattr",
+      "0xc1",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "void __user * value"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      "fs/xattr.c",
+      788
+    ],
+    [
+      194,
+      "listxattr",
+      "0xc2",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "char __user * list"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      {},
+      "fs/xattr.c",
+      853
+    ],
+    [
+      195,
+      "llistxattr",
+      "0xc3",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "char __user * list"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      {},
+      "fs/xattr.c",
+      859
+    ],
+    [
+      196,
+      "flistxattr",
+      "0xc4",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "char __user * list"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      {},
+      "fs/xattr.c",
+      865
+    ],
+    [
+      197,
+      "removexattr",
+      "0xc5",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/xattr.c",
+      922
+    ],
+    [
+      198,
+      "lremovexattr",
+      "0xc6",
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/xattr.c",
+      928
+    ],
+    [
+      199,
+      "fremovexattr",
+      "0xc7",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/xattr.c",
+      934
+    ],
+    [
+      200,
+      "tkill",
+      "0xc8",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3969
+    ],
+    [
+      201,
+      "time",
+      "0xc9",
+      {
+        "def": null,
+        "type": "__kernel_old_time_t __user * tloc"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/time.c",
+      62
+    ],
+    [
+      202,
+      "futex",
+      "0xca",
+      {
+        "def": null,
+        "type": "u32 __user * uaddr"
+      },
+      {
+        "def": null,
+        "type": "int op"
+      },
+      {
+        "def": null,
+        "type": "u32 val"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * utime"
+      },
+      {
+        "def": null,
+        "type": "u32 __user * uaddr2"
+      },
+      {
+        "def": null,
+        "type": "u32 val3"
+      },
+      "kernel/futex/syscalls.c",
+      164
+    ],
+    [
+      203,
+      "sched_setaffinity",
+      "0xcb",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned int len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long __user * user_mask_ptr"
+      },
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8341
+    ],
+    [
+      204,
+      "sched_getaffinity",
+      "0xcc",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned int len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long __user * user_mask_ptr"
+      },
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      8393
+    ],
+    [
+      205,
+      "set_thread_area",
+      "0xcd",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      206,
+      "io_setup",
+      "0xce",
+      {
+        "def": null,
+        "type": "unsigned nr_events"
+      },
+      {
+        "def": null,
+        "type": "aio_context_t __user * ctxp"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/aio.c",
+      1339
+    ],
+    [
+      207,
+      "io_destroy",
+      "0xcf",
+      {
+        "def": null,
+        "type": "aio_context_t ctx"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/aio.c",
+      1408
+    ],
+    [
+      208,
+      "io_getevents",
+      "0xd0",
+      {
+        "def": null,
+        "type": "aio_context_t ctx_id"
+      },
+      {
+        "def": null,
+        "type": "long min_nr"
+      },
+      {
+        "def": null,
+        "type": "long nr"
+      },
+      {
+        "def": null,
+        "type": "struct io_event __user * events"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * timeout"
+      },
+      {},
+      "fs/aio.c",
+      2222
+    ],
+    [
+      209,
+      "io_submit",
+      "0xd1",
+      {
+        "def": null,
+        "type": "aio_context_t ctx_id"
+      },
+      {
+        "def": null,
+        "type": "long nr"
+      },
+      {
+        "def": null,
+        "type": "struct iocb __user * __user * iocbpp"
+      },
+      {},
+      {},
+      {},
+      "fs/aio.c",
+      2052
+    ],
+    [
+      210,
+      "io_cancel",
+      "0xd2",
+      {
+        "def": null,
+        "type": "aio_context_t ctx_id"
+      },
+      {
+        "def": null,
+        "type": "struct iocb __user * iocb"
+      },
+      {
+        "def": null,
+        "type": "struct io_event __user * result"
+      },
+      {},
+      {},
+      {},
+      "fs/aio.c",
+      2146
+    ],
+    [
+      211,
+      "get_thread_area",
+      "0xd3",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      212,
+      "lookup_dcookie",
+      "0xd4",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      213,
+      "epoll_create",
+      "0xd5",
+      {
+        "def": null,
+        "type": "int size"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/eventpoll.c",
+      2037
+    ],
+    [
+      214,
+      "epoll_ctl_old",
+      "0xd6",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      215,
+      "epoll_wait_old",
+      "0xd7",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      216,
+      "remap_file_pages",
+      "0xd8",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "unsigned long size"
+      },
+      {
+        "def": null,
+        "type": "unsigned long prot"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pgoff"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      "mm/mmap.c",
+      2811
+    ],
+    [
+      217,
+      "getdents64",
+      "0xd9",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "struct linux_dirent64 __user * dirent"
+      },
+      {
+        "def": null,
+        "type": "unsigned int count"
+      },
+      {},
+      {},
+      {},
+      "fs/readdir.c",
+      354
+    ],
+    [
+      218,
+      "set_tid_address",
+      "0xda",
+      {
+        "def": null,
+        "type": "int __user * tidptr"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/fork.c",
+      1788
+    ],
+    [
+      219,
+      "restart_syscall",
+      "0xdb",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      2999
+    ],
+    [
+      220,
+      "semtimedop",
+      "0xdc",
+      {
+        "def": null,
+        "type": "int semid"
+      },
+      {
+        "def": null,
+        "type": "struct sembuf __user * tsops"
+      },
+      {
+        "def": null,
+        "type": "unsigned int nsops"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * timeout"
+      },
+      {},
+      {},
+      "ipc/sem.c",
+      2270
+    ],
+    [
+      221,
+      "fadvise64",
+      "0xdd",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "loff_t offset"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "int advice"
+      },
+      {},
+      {},
+      "mm/fadvise.c",
+      212
+    ],
+    [
+      222,
+      "timer_create",
+      "0xde",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "struct sigevent __user * timer_event_spec"
+      },
+      {
+        "def": null,
+        "type": "timer_t __user * created_timer_id"
+      },
+      {},
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      577
+    ],
+    [
+      223,
+      "timer_settime",
+      "0xdf",
+      {
+        "def": null,
+        "type": "timer_t timer_id"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_itimerspec __user * new_setting"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_itimerspec __user * old_setting"
+      },
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      938
+    ],
+    [
+      224,
+      "timer_gettime",
+      "0xe0",
+      {
+        "def": null,
+        "type": "timer_t timer_id"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_itimerspec __user * setting"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      738
+    ],
+    [
+      225,
+      "timer_getoverrun",
+      "0xe1",
+      {
+        "def": null,
+        "type": "timer_t timer_id"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      777
+    ],
+    [
+      226,
+      "timer_delete",
+      "0xe2",
+      {
+        "def": null,
+        "type": "timer_t timer_id"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      1004
+    ],
+    [
+      227,
+      "clock_settime",
+      "0xe3",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * tp"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-stubs.c",
+      60
+    ],
+    [
+      228,
+      "clock_gettime",
+      "0xe4",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * tp"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-stubs.c",
+      94
+    ],
+    [
+      229,
+      "clock_getres",
+      "0xe5",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * tp"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-stubs.c",
+      109
+    ],
+    [
+      230,
+      "clock_nanosleep",
+      "0xe6",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * rqtp"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * rmtp"
+      },
+      {},
+      {},
+      "kernel/time/posix-stubs.c",
+      128
+    ],
+    [
+      231,
+      "exit_group",
+      "0xe7",
+      {
+        "def": null,
+        "type": "int error_code"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/exit.c",
+      1021
+    ],
+    [
+      232,
+      "epoll_wait",
+      "0xe8",
+      {
+        "def": null,
+        "type": "int epfd"
+      },
+      {
+        "def": null,
+        "type": "struct epoll_event __user * events"
+      },
+      {
+        "def": null,
+        "type": "int maxevents"
+      },
+      {
+        "def": null,
+        "type": "int timeout"
+      },
+      {},
+      {},
+      "fs/eventpoll.c",
+      2265
+    ],
+    [
+      233,
+      "epoll_ctl",
+      "0xe9",
+      {
+        "def": null,
+        "type": "int epfd"
+      },
+      {
+        "def": null,
+        "type": "int op"
+      },
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct epoll_event __user * event"
+      },
+      {},
+      {},
+      "fs/eventpoll.c",
+      2207
+    ],
+    [
+      234,
+      "tgkill",
+      "0xea",
+      {
+        "def": null,
+        "type": "pid_t tgid"
+      },
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3953
+    ],
+    [
+      235,
+      "utimes",
+      "0xeb",
+      {
+        "def": null,
+        "type": "char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_old_timeval __user * utimes"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/utimes.c",
+      208
+    ],
+    [
+      236,
+      "vserver",
+      "0xec",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      237,
+      "mbind",
+      "0xed",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "unsigned long len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long mode"
+      },
+      {
+        "def": null,
+        "type": "const unsigned long __user * nmask"
+      },
+      {
+        "def": null,
+        "type": "unsigned long maxnode"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      "mm/mempolicy.c",
+      1559
+    ],
+    [
+      238,
+      "set_mempolicy",
+      "0xee",
+      {
+        "def": null,
+        "type": "int mode"
+      },
+      {
+        "def": null,
+        "type": "const unsigned long __user * nmask"
+      },
+      {
+        "def": null,
+        "type": "unsigned long maxnode"
+      },
+      {},
+      {},
+      {},
+      "mm/mempolicy.c",
+      1586
+    ],
+    [
+      239,
+      "get_mempolicy",
+      "0xef",
+      {
+        "def": null,
+        "type": "int __user * policy"
+      },
+      {
+        "def": null,
+        "type": "unsigned long __user * nmask"
+      },
+      {
+        "def": null,
+        "type": "unsigned long maxnode"
+      },
+      {
+        "def": null,
+        "type": "unsigned long addr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      "mm/mempolicy.c",
+      1718
+    ],
+    [
+      240,
+      "mq_open",
+      "0xf0",
+      {
+        "def": null,
+        "type": "const char __user * u_name"
+      },
+      {
+        "def": null,
+        "type": "int oflag"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {
+        "def": null,
+        "type": "struct mq_attr __user * u_attr"
+      },
+      {},
+      {},
+      "ipc/mqueue.c",
+      942
+    ],
+    [
+      241,
+      "mq_unlink",
+      "0xf1",
+      {
+        "def": null,
+        "type": "const char __user * u_name"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "ipc/mqueue.c",
+      952
+    ],
+    [
+      242,
+      "mq_timedsend",
+      "0xf2",
+      {
+        "def": null,
+        "type": "mqd_t mqdes"
+      },
+      {
+        "def": null,
+        "type": "const char __user * u_msg_ptr"
+      },
+      {
+        "def": null,
+        "type": "size_t msg_len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int msg_prio"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * u_abs_timeout"
+      },
+      {},
+      "ipc/mqueue.c",
+      1284
+    ],
+    [
+      243,
+      "mq_timedreceive",
+      "0xf3",
+      {
+        "def": null,
+        "type": "mqd_t mqdes"
+      },
+      {
+        "def": null,
+        "type": "char __user * u_msg_ptr"
+      },
+      {
+        "def": null,
+        "type": "size_t msg_len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int __user * u_msg_prio"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * u_abs_timeout"
+      },
+      {},
+      "ipc/mqueue.c",
+      1298
+    ],
+    [
+      244,
+      "mq_notify",
+      "0xf4",
+      {
+        "def": null,
+        "type": "mqd_t mqdes"
+      },
+      {
+        "def": null,
+        "type": "const struct sigevent __user * u_notification"
+      },
+      {},
+      {},
+      {},
+      {},
+      "ipc/mqueue.c",
+      1440
+    ],
+    [
+      245,
+      "mq_getsetattr",
+      "0xf5",
+      {
+        "def": null,
+        "type": "mqd_t mqdes"
+      },
+      {
+        "def": null,
+        "type": "const struct mq_attr __user * u_mqstat"
+      },
+      {
+        "def": null,
+        "type": "struct mq_attr __user * u_omqstat"
+      },
+      {},
+      {},
+      {},
+      "ipc/mqueue.c",
+      1496
+    ],
+    [
+      246,
+      "kexec_load",
+      "0xf6",
+      {
+        "def": null,
+        "type": "unsigned long entry"
+      },
+      {
+        "def": null,
+        "type": "unsigned long nr_segments"
+      },
+      {
+        "def": null,
+        "type": "struct kexec_segment __user * segments"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      {},
+      "kernel/kexec.c",
+      228
+    ],
+    [
+      247,
+      "waitid",
+      "0xf7",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "pid_t upid"
+      },
+      {
+        "def": null,
+        "type": "struct siginfo __user * infop"
+      },
+      {
+        "def": null,
+        "type": "int options"
+      },
+      {
+        "def": null,
+        "type": "struct rusage __user * ru"
+      },
+      {},
+      "kernel/exit.c",
+      1700
+    ],
+    [
+      248,
+      "add_key",
+      "0xf8",
+      {
+        "def": null,
+        "type": "const char __user * _type"
+      },
+      {
+        "def": null,
+        "type": "const char __user * _description"
+      },
+      {
+        "def": null,
+        "type": "const void __user * _payload"
+      },
+      {
+        "def": null,
+        "type": "size_t plen"
+      },
+      {
+        "def": null,
+        "type": "key_serial_t ringid"
+      },
+      {},
+      "security/keys/keyctl.c",
+      74
+    ],
+    [
+      249,
+      "request_key",
+      "0xf9",
+      {
+        "def": null,
+        "type": "const char __user * _type"
+      },
+      {
+        "def": null,
+        "type": "const char __user * _description"
+      },
+      {
+        "def": null,
+        "type": "const char __user * _callout_info"
+      },
+      {
+        "def": null,
+        "type": "key_serial_t destringid"
+      },
+      {},
+      {},
+      "security/keys/keyctl.c",
+      167
+    ],
+    [
+      250,
+      "keyctl",
+      "0xfa",
+      {
+        "def": null,
+        "type": "int option"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg2"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg3"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg4"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg5"
+      },
+      {},
+      "security/keys/keyctl.c",
+      1869
+    ],
+    [
+      251,
+      "ioprio_set",
+      "0xfb",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "int who"
+      },
+      {
+        "def": null,
+        "type": "int ioprio"
+      },
+      {},
+      {},
+      {},
+      "block/ioprio.c",
+      68
+    ],
+    [
+      252,
+      "ioprio_get",
+      "0xfc",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "int who"
+      },
+      {},
+      {},
+      {},
+      {},
+      "block/ioprio.c",
+      209
+    ],
+    [
+      253,
+      "inotify_init",
+      "0xfd",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/notify/inotify/inotify_user.c",
+      725
+    ],
+    [
+      254,
+      "inotify_add_watch",
+      "0xfe",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "u32 mask"
+      },
+      {},
+      {},
+      {},
+      "fs/notify/inotify/inotify_user.c",
+      730
+    ],
+    [
+      255,
+      "inotify_rm_watch",
+      "0xff",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "__s32 wd"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/notify/inotify/inotify_user.c",
+      794
+    ],
+    [
+      256,
+      "migrate_pages",
+      "0x100",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned long maxnode"
+      },
+      {
+        "def": null,
+        "type": "const unsigned long __user * old_nodes"
+      },
+      {
+        "def": null,
+        "type": "const unsigned long __user * new_nodes"
+      },
+      {},
+      {},
+      "mm/mempolicy.c",
+      1680
+    ],
+    [
+      257,
+      "openat",
+      "0x101",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      "fs/open.c",
+      1337
+    ],
+    [
+      258,
+      "mkdirat",
+      "0x102",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4074
+    ],
+    [
+      259,
+      "mknodat",
+      "0x103",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {
+        "def": null,
+        "type": "unsigned int dev"
+      },
+      {},
+      {},
+      "fs/namei.c",
+      3990
+    ],
+    [
+      260,
+      "fchownat",
+      "0x104",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "uid_t user"
+      },
+      {
+        "def": null,
+        "type": "gid_t group"
+      },
+      {
+        "def": null,
+        "type": "int flag"
+      },
+      {},
+      "fs/open.c",
+      779
+    ],
+    [
+      261,
+      "futimesat",
+      "0x105",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_old_timeval __user * utimes"
+      },
+      {},
+      {},
+      {},
+      "fs/utimes.c",
+      202
+    ],
+    [
+      262,
+      "newfstatat",
+      "0x106",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct stat __user * statbuf"
+      },
+      {
+        "def": null,
+        "type": "int flag"
+      },
+      {},
+      {},
+      "fs/stat.c",
+      434
+    ],
+    [
+      263,
+      "unlinkat",
+      "0x107",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "int flag"
+      },
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4356
+    ],
+    [
+      264,
+      "renameat",
+      "0x108",
+      {
+        "def": null,
+        "type": "int olddfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "int newdfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {},
+      {},
+      "fs/namei.c",
+      4967
+    ],
+    [
+      265,
+      "linkat",
+      "0x109",
+      {
+        "def": null,
+        "type": "int olddfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "int newdfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      "fs/namei.c",
+      4625
+    ],
+    [
+      266,
+      "symlinkat",
+      "0x10a",
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "int newdfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {},
+      {},
+      {},
+      "fs/namei.c",
+      4444
+    ],
+    [
+      267,
+      "readlinkat",
+      "0x10b",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * pathname"
+      },
+      {
+        "def": null,
+        "type": "char __user * buf"
+      },
+      {
+        "def": null,
+        "type": "int bufsiz"
+      },
+      {},
+      {},
+      "fs/stat.c",
+      495
+    ],
+    [
+      268,
+      "fchmodat",
+      "0x10c",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "umode_t mode"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      655
+    ],
+    [
+      269,
+      "faccessat",
+      "0x10d",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "int mode"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      492
+    ],
+    [
+      270,
+      "pselect6",
+      "0x10e",
+      {
+        "def": null,
+        "type": "int n"
+      },
+      {
+        "def": null,
+        "type": "fd_set __user * inp"
+      },
+      {
+        "def": null,
+        "type": "fd_set __user * outp"
+      },
+      {
+        "def": null,
+        "type": "fd_set __user * exp"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * tsp"
+      },
+      {
+        "def": null,
+        "type": "void __user * sig"
+      },
+      "fs/select.c",
+      795
+    ],
+    [
+      271,
+      "ppoll",
+      "0x10f",
+      {
+        "def": null,
+        "type": "struct pollfd __user * ufds"
+      },
+      {
+        "def": null,
+        "type": "unsigned int nfds"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * tsp"
+      },
+      {
+        "def": null,
+        "type": "const sigset_t __user * sigmask"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      "fs/select.c",
+      1101
+    ],
+    [
+      272,
+      "unshare",
+      "0x110",
+      {
+        "def": null,
+        "type": "unsigned long unshare_flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "kernel/fork.c",
+      3271
+    ],
+    [
+      273,
+      "set_robust_list",
+      "0x111",
+      {
+        "def": null,
+        "type": "struct robust_list_head __user * head"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/futex/syscalls.c",
+      29
+    ],
+    [
+      274,
+      "get_robust_list",
+      "0x112",
+      {
+        "def": null,
+        "type": "int pid"
+      },
+      {
+        "def": null,
+        "type": "struct robust_list_head __user * __user * head_ptr"
+      },
+      {
+        "def": null,
+        "type": "size_t __user * len_ptr"
+      },
+      {},
+      {},
+      {},
+      "kernel/futex/syscalls.c",
+      49
+    ],
+    [
+      275,
+      "splice",
+      "0x113",
+      {
+        "def": null,
+        "type": "int fd_in"
+      },
+      {
+        "def": null,
+        "type": "loff_t __user * off_in"
+      },
+      {
+        "def": null,
+        "type": "int fd_out"
+      },
+      {
+        "def": null,
+        "type": "loff_t __user * off_out"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      "fs/splice.c",
+      1328
+    ],
+    [
+      276,
+      "tee",
+      "0x114",
+      {
+        "def": null,
+        "type": "int fdin"
+      },
+      {
+        "def": null,
+        "type": "int fdout"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "fs/splice.c",
+      1694
+    ],
+    [
+      277,
+      "sync_file_range",
+      "0x115",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "loff_t offset"
+      },
+      {
+        "def": null,
+        "type": "loff_t nbytes"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "fs/sync.c",
+      370
+    ],
+    [
+      278,
+      "vmsplice",
+      "0x116",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * uiov"
+      },
+      {
+        "def": null,
+        "type": "unsigned long nr_segs"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "fs/splice.c",
+      1292
+    ],
+    [
+      279,
+      "move_pages",
+      "0x117",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned long nr_pages"
+      },
+      {
+        "def": null,
+        "type": "const void __user * __user * pages"
+      },
+      {
+        "def": null,
+        "type": "const int __user * nodes"
+      },
+      {
+        "def": null,
+        "type": "int __user * status"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      "mm/migrate.c",
+      2096
+    ],
+    [
+      280,
+      "utimensat",
+      "0x118",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * utimes"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      "fs/utimes.c",
+      147
+    ],
+    [
+      281,
+      "epoll_pwait",
+      "0x119",
+      {
+        "def": null,
+        "type": "int epfd"
+      },
+      {
+        "def": null,
+        "type": "struct epoll_event __user * events"
+      },
+      {
+        "def": null,
+        "type": "int maxevents"
+      },
+      {
+        "def": null,
+        "type": "int timeout"
+      },
+      {
+        "def": null,
+        "type": "const sigset_t __user * sigmask"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      "fs/eventpoll.c",
+      2299
+    ],
+    [
+      282,
+      "signalfd",
+      "0x11a",
+      {
+        "def": null,
+        "type": "int ufd"
+      },
+      {
+        "def": null,
+        "type": "sigset_t __user * user_mask"
+      },
+      {
+        "def": null,
+        "type": "size_t sizemask"
+      },
+      {},
+      {},
+      {},
+      "fs/signalfd.c",
+      314
+    ],
+    [
+      283,
+      "timerfd_create",
+      "0x11b",
+      {
+        "def": null,
+        "type": "int clockid"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/timerfd.c",
+      406
+    ],
+    [
+      284,
+      "eventfd",
+      "0x11c",
+      {
+        "def": null,
+        "type": "unsigned int count"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/eventfd.c",
+      463
+    ],
+    [
+      285,
+      "fallocate",
+      "0x11d",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int mode"
+      },
+      {
+        "def": null,
+        "type": "loff_t offset"
+      },
+      {
+        "def": null,
+        "type": "loff_t len"
+      },
+      {},
+      {},
+      "fs/open.c",
+      352
+    ],
+    [
+      286,
+      "timerfd_settime",
+      "0x11e",
+      {
+        "def": null,
+        "type": "int ufd"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_itimerspec __user * utmr"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_itimerspec __user * otmr"
+      },
+      {},
+      {},
+      "fs/timerfd.c",
+      558
+    ],
+    [
+      287,
+      "timerfd_gettime",
+      "0x11f",
+      {
+        "def": null,
+        "type": "int ufd"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_itimerspec __user * otmr"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/timerfd.c",
+      576
+    ],
+    [
+      288,
+      "accept4",
+      "0x120",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * upeer_sockaddr"
+      },
+      {
+        "def": null,
+        "type": "int __user * upeer_addrlen"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      "net/socket.c",
+      1938
+    ],
+    [
+      289,
+      "signalfd4",
+      "0x121",
+      {
+        "def": null,
+        "type": "int ufd"
+      },
+      {
+        "def": null,
+        "type": "sigset_t __user * user_mask"
+      },
+      {
+        "def": null,
+        "type": "size_t sizemask"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      "fs/signalfd.c",
+      302
+    ],
+    [
+      290,
+      "eventfd2",
+      "0x122",
+      {
+        "def": null,
+        "type": "unsigned int count"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/eventfd.c",
+      458
+    ],
+    [
+      291,
+      "epoll_create1",
+      "0x123",
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/eventpoll.c",
+      2032
+    ],
+    [
+      292,
+      "dup3",
+      "0x124",
+      {
+        "def": null,
+        "type": "unsigned int oldfd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int newfd"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      "fs/file.c",
+      1249
+    ],
+    [
+      293,
+      "pipe2",
+      "0x125",
+      {
+        "def": null,
+        "type": "int __user * fildes"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/pipe.c",
+      1026
+    ],
+    [
+      294,
+      "inotify_init1",
+      "0x126",
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/notify/inotify/inotify_user.c",
+      720
+    ],
+    [
+      295,
+      "preadv",
+      "0x127",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_l"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_h"
+      },
+      {},
+      "fs/read_write.c",
+      1053
+    ],
+    [
+      296,
+      "pwritev",
+      "0x128",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_l"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_h"
+      },
+      {},
+      "fs/read_write.c",
+      1073
+    ],
+    [
+      297,
+      "rt_tgsigqueueinfo",
+      "0x129",
+      {
+        "def": null,
+        "type": "pid_t tgid"
+      },
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "siginfo_t __user * uinfo"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      4037
+    ],
+    [
+      298,
+      "perf_event_open",
+      "0x12a",
+      {
+        "def": null,
+        "type": "struct perf_event_attr __user * attr_uptr"
+      },
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int cpu"
+      },
+      {
+        "def": null,
+        "type": "int group_fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      "kernel/events/core.c",
+      12296
+    ],
+    [
+      299,
+      "recvmmsg",
+      "0x12b",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct mmsghdr __user * mmsg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * timeout"
+      },
+      {},
+      "net/socket.c",
+      2929
+    ],
+    [
+      300,
+      "fanotify_init",
+      "0x12c",
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned int event_f_flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/notify/fanotify/fanotify_user.c",
+      1344
+    ],
+    [
+      301,
+      "fanotify_mark",
+      "0x12d",
+      {
+        "def": null,
+        "type": "int fanotify_fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "__u64 mask"
+      },
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char  __user * pathname"
+      },
+      {},
+      "fs/notify/fanotify/fanotify_user.c",
+      1822
+    ],
+    [
+      302,
+      "prlimit64",
+      "0x12e",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned int resource"
+      },
+      {
+        "def": null,
+        "type": "const struct rlimit64 __user * new_rlim"
+      },
+      {
+        "def": null,
+        "type": "struct rlimit64 __user * old_rlim"
+      },
+      {},
+      {},
+      "kernel/sys.c",
+      1666
+    ],
+    [
+      303,
+      "name_to_handle_at",
+      "0x12f",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * name"
+      },
+      {
+        "def": null,
+        "type": "struct file_handle __user * handle"
+      },
+      {
+        "def": null,
+        "type": "int __user * mnt_id"
+      },
+      {
+        "def": null,
+        "type": "int flag"
+      },
+      {},
+      "fs/fhandle.c",
+      93
+    ],
+    [
+      304,
+      "open_by_handle_at",
+      "0x130",
+      {
+        "def": null,
+        "type": "int mountdirfd"
+      },
+      {
+        "def": null,
+        "type": "struct file_handle __user * handle"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      "fs/fhandle.c",
+      256
+    ],
+    [
+      305,
+      "clock_adjtime",
+      "0x131",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timex __user * utx"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      1121
+    ],
+    [
+      306,
+      "syncfs",
+      "0x132",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/sync.c",
+      149
+    ],
+    [
+      307,
+      "sendmmsg",
+      "0x133",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct mmsghdr __user * mmsg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "net/socket.c",
+      2645
+    ],
+    [
+      308,
+      "setns",
+      "0x134",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/nsproxy.c",
+      546
+    ],
+    [
+      309,
+      "getcpu",
+      "0x135",
+      {
+        "def": null,
+        "type": "unsigned __user * cpup"
+      },
+      {
+        "def": null,
+        "type": "unsigned __user * nodep"
+      },
+      {
+        "def": null,
+        "type": "struct getcpu_cache __user * unused"
+      },
+      {},
+      {},
+      {},
+      "kernel/sys.c",
+      2638
+    ],
+    [
+      310,
+      "process_vm_readv",
+      "0x136",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * lvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long liovcnt"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * rvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long riovcnt"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      "mm/process_vm_access.c",
+      291
+    ],
+    [
+      311,
+      "process_vm_writev",
+      "0x137",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * lvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long liovcnt"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * rvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long riovcnt"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      "mm/process_vm_access.c",
+      298
+    ],
+    [
+      312,
+      "kcmp",
+      "0x138",
+      {
+        "def": null,
+        "type": "pid_t pid1"
+      },
+      {
+        "def": null,
+        "type": "pid_t pid2"
+      },
+      {
+        "def": null,
+        "type": "int type"
+      },
+      {
+        "def": null,
+        "type": "unsigned long idx1"
+      },
+      {
+        "def": null,
+        "type": "unsigned long idx2"
+      },
+      {},
+      "kernel/kcmp.c",
+      135
+    ],
+    [
+      313,
+      "finit_module",
+      "0x139",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * uargs"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      "kernel/module/main.c",
+      2939
+    ],
+    [
+      314,
+      "sched_setattr",
+      "0x13a",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "struct sched_attr __user * uattr"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "kernel/sched/core.c",
+      7971
+    ],
+    [
+      315,
+      "sched_getattr",
+      "0x13b",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "struct sched_attr __user * uattr"
+      },
+      {
+        "def": null,
+        "type": "unsigned int usize"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "kernel/sched/core.c",
+      8124
+    ],
+    [
+      316,
+      "renameat2",
+      "0x13c",
+      {
+        "def": null,
+        "type": "int olddfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * oldname"
+      },
+      {
+        "def": null,
+        "type": "int newdfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * newname"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      "fs/namei.c",
+      4960
+    ],
+    [
+      317,
+      "seccomp",
+      "0x13d",
+      {
+        "def": null,
+        "type": "unsigned int op"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "void __user * uargs"
+      },
+      {},
+      {},
+      {},
+      "kernel/seccomp.c",
+      2007
+    ],
+    [
+      318,
+      "getrandom",
+      "0x13e",
+      {
+        "def": null,
+        "type": "char __user * ubuf"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "drivers/char/random.c",
+      1364
+    ],
+    [
+      319,
+      "memfd_create",
+      "0x13f",
+      {
+        "def": null,
+        "type": "const char __user * uname"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/memfd.c",
+      266
+    ],
+    [
+      320,
+      "kexec_file_load",
+      "0x140",
+      {
+        "def": null,
+        "type": "int kernel_fd"
+      },
+      {
+        "def": null,
+        "type": "int initrd_fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long cmdline_len"
+      },
+      {
+        "def": null,
+        "type": "const char __user * cmdline_ptr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      "kernel/kexec_file.c",
+      325
+    ],
+    [
+      321,
+      "bpf",
+      "0x141",
+      {
+        "def": null,
+        "type": "int cmd"
+      },
+      {
+        "def": null,
+        "type": "union bpf_attr __user * uattr"
+      },
+      {
+        "def": null,
+        "type": "unsigned int size"
+      },
+      {},
+      {},
+      {},
+      "kernel/bpf/syscall.c",
+      5071
+    ],
+    [
+      322,
+      "execveat",
+      "0x142",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * argv"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * envp"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      "fs/exec.c",
+      2109
+    ],
+    [
+      323,
+      "userfaultfd",
+      "0x143",
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "fs/userfaultfd.c",
+      2150
+    ],
+    [
+      324,
+      "membarrier",
+      "0x144",
+      {
+        "def": null,
+        "type": "int cmd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "int cpu_id"
+      },
+      {},
+      {},
+      {},
+      "kernel/sched/membarrier.c",
+      579
+    ],
+    [
+      325,
+      "mlock2",
+      "0x145",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      {},
+      "mm/mlock.c",
+      619
+    ],
+    [
+      326,
+      "copy_file_range",
+      "0x146",
+      {
+        "def": null,
+        "type": "int fd_in"
+      },
+      {
+        "def": null,
+        "type": "loff_t __user * off_in"
+      },
+      {
+        "def": null,
+        "type": "int fd_out"
+      },
+      {
+        "def": null,
+        "type": "loff_t __user * off_out"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      "fs/read_write.c",
+      1559
+    ],
+    [
+      327,
+      "preadv2",
+      "0x147",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_l"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_h"
+      },
+      {
+        "def": null,
+        "type": "rwf_t flags"
+      },
+      "fs/read_write.c",
+      1061
+    ],
+    [
+      328,
+      "pwritev2",
+      "0x148",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_l"
+      },
+      {
+        "def": null,
+        "type": "unsigned long pos_h"
+      },
+      {
+        "def": null,
+        "type": "rwf_t flags"
+      },
+      "fs/read_write.c",
+      1081
+    ],
+    [
+      329,
+      "pkey_mprotect",
+      "0x149",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long prot"
+      },
+      {
+        "def": null,
+        "type": "int pkey"
+      },
+      {},
+      {},
+      "mm/mprotect.c",
+      823
+    ],
+    [
+      330,
+      "pkey_alloc",
+      "0x14a",
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned long init_val"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/mprotect.c",
+      829
+    ],
+    [
+      331,
+      "pkey_free",
+      "0x14b",
+      {
+        "def": null,
+        "type": "int pkey"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "mm/mprotect.c",
+      859
+    ],
+    [
+      332,
+      "statx",
+      "0x14c",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "unsigned flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned int mask"
+      },
+      {
+        "def": null,
+        "type": "struct statx __user * buffer"
+      },
+      {},
+      "fs/stat.c",
+      664
+    ],
+    [
+      333,
+      "io_pgetevents",
+      "0x14d",
+      {
+        "def": null,
+        "type": "aio_context_t ctx_id"
+      },
+      {
+        "def": null,
+        "type": "long min_nr"
+      },
+      {
+        "def": null,
+        "type": "long nr"
+      },
+      {
+        "def": null,
+        "type": "struct io_event __user * events"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * timeout"
+      },
+      {
+        "def": null,
+        "type": "const struct __aio_sigset __user * usig"
+      },
+      "fs/aio.c",
+      2247
+    ],
+    [
+      334,
+      "rseq",
+      "0x14e",
+      {
+        "def": null,
+        "type": "struct rseq __user * rseq"
+      },
+      {
+        "def": null,
+        "type": "u32 rseq_len"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {
+        "def": null,
+        "type": "u32 sig"
+      },
+      {},
+      {},
+      "kernel/rseq.c",
+      336
+    ],
+    [
+      424,
+      "pidfd_send_signal",
+      "0x1a8",
+      {
+        "def": null,
+        "type": "int pidfd"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "siginfo_t __user * info"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      3847
+    ],
+    [
+      425,
+      "io_uring_setup",
+      "0x1a9",
+      {
+        "def": null,
+        "type": "u32 entries"
+      },
+      {
+        "def": null,
+        "type": "struct io_uring_params __user * params"
+      },
+      {},
+      {},
+      {},
+      {},
+      "io_uring/io_uring.c",
+      3730
+    ],
+    [
+      426,
+      "io_uring_enter",
+      "0x1aa",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "u32 to_submit"
+      },
+      {
+        "def": null,
+        "type": "u32 min_complete"
+      },
+      {
+        "def": null,
+        "type": "u32 flags"
+      },
+      {
+        "def": null,
+        "type": "const void __user * argp"
+      },
+      {
+        "def": null,
+        "type": "size_t argsz"
+      },
+      "io_uring/io_uring.c",
+      3275
+    ],
+    [
+      427,
+      "io_uring_register",
+      "0x1ab",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int opcode"
+      },
+      {
+        "def": null,
+        "type": "void __user * arg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int nr_args"
+      },
+      {},
+      {},
+      "io_uring/io_uring.c",
+      4174
+    ],
+    [
+      428,
+      "open_tree",
+      "0x1ac",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "unsigned flags"
+      },
+      {},
+      {},
+      {},
+      "fs/namespace.c",
+      2609
+    ],
+    [
+      429,
+      "move_mount",
+      "0x1ad",
+      {
+        "def": null,
+        "type": "int from_dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * from_pathname"
+      },
+      {
+        "def": null,
+        "type": "int to_dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * to_pathname"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      "fs/namespace.c",
+      3871
+    ],
+    [
+      430,
+      "fsopen",
+      "0x1ae",
+      {
+        "def": null,
+        "type": "const char __user * _fs_name"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/fsopen.c",
+      115
+    ],
+    [
+      431,
+      "fsconfig",
+      "0x1af",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * _key"
+      },
+      {
+        "def": null,
+        "type": "const void __user * _value"
+      },
+      {
+        "def": null,
+        "type": "int aux"
+      },
+      {},
+      "fs/fsopen.c",
+      314
+    ],
+    [
+      432,
+      "fsmount",
+      "0x1b0",
+      {
+        "def": null,
+        "type": "int fs_fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "unsigned int attr_flags"
+      },
+      {},
+      {},
+      {},
+      "fs/namespace.c",
+      3742
+    ],
+    [
+      433,
+      "fspick",
+      "0x1b1",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * path"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "fs/fsopen.c",
+      158
+    ],
+    [
+      434,
+      "pidfd_open",
+      "0x1b2",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/pid.c",
+      629
+    ],
+    [
+      435,
+      "clone3",
+      "0x1b3",
+      {
+        "def": null,
+        "type": "struct clone_args __user * uargs"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/fork.c",
+      2964
+    ],
+    [
+      436,
+      "close_range",
+      "0x1b4",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int max_fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "fs/open.c",
+      1462
+    ],
+    [
+      437,
+      "openat2",
+      "0x1b5",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "struct open_how __user * how"
+      },
+      {
+        "def": null,
+        "type": "size_t usize"
+      },
+      {},
+      {},
+      "fs/open.c",
+      1345
+    ],
+    [
+      438,
+      "pidfd_getfd",
+      "0x1b6",
+      {
+        "def": null,
+        "type": "int pidfd"
+      },
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "kernel/pid.c",
+      724
+    ],
+    [
+      439,
+      "faccessat2",
+      "0x1b7",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "int mode"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      {},
+      "fs/open.c",
+      497
+    ],
+    [
+      440,
+      "process_madvise",
+      "0x1b8",
+      {
+        "def": null,
+        "type": "int pidfd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "size_t vlen"
+      },
+      {
+        "def": null,
+        "type": "int behavior"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      "mm/madvise.c",
+      1460
+    ],
+    [
+      441,
+      "epoll_pwait2",
+      "0x1b9",
+      {
+        "def": null,
+        "type": "int epfd"
+      },
+      {
+        "def": null,
+        "type": "struct epoll_event __user * events"
+      },
+      {
+        "def": null,
+        "type": "int maxevents"
+      },
+      {
+        "def": null,
+        "type": "const struct __kernel_timespec __user * timeout"
+      },
+      {
+        "def": null,
+        "type": "const sigset_t __user * sigmask"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      "fs/eventpoll.c",
+      2310
+    ],
+    [
+      442,
+      "mount_setattr",
+      "0x1ba",
+      {
+        "def": null,
+        "type": "int dfd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * path"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "struct mount_attr __user * uattr"
+      },
+      {
+        "def": null,
+        "type": "size_t usize"
+      },
+      {},
+      "fs/namespace.c",
+      4437
+    ],
+    [
+      443,
+      "quotactl_fd",
+      "0x1bb",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "qid_t id"
+      },
+      {
+        "def": null,
+        "type": "void __user * addr"
+      },
+      {},
+      {},
+      "fs/quota/quota.c",
+      972
+    ],
+    [
+      444,
+      "landlock_create_ruleset",
+      "0x1bc",
+      {
+        "def": null,
+        "type": "const struct landlock_ruleset_attr __user *const attr"
+      },
+      {
+        "def": null,
+        "type": "const size_t size"
+      },
+      {
+        "def": null,
+        "type": "const __u32 flags"
+      },
+      {},
+      {},
+      {},
+      "security/landlock/syscalls.c",
+      157
+    ],
+    [
+      445,
+      "landlock_add_rule",
+      "0x1bd",
+      {
+        "def": null,
+        "type": "const int ruleset_fd"
+      },
+      {
+        "def": null,
+        "type": "const enum landlock_rule_type rule_type"
+      },
+      {
+        "def": null,
+        "type": "const void __user *const rule_attr"
+      },
+      {
+        "def": null,
+        "type": "const __u32 flags"
+      },
+      {},
+      {},
+      "security/landlock/syscalls.c",
+      305
+    ],
+    [
+      446,
+      "landlock_restrict_self",
+      "0x1be",
+      {
+        "def": null,
+        "type": "const int ruleset_fd"
+      },
+      {
+        "def": null,
+        "type": "const __u32 flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "security/landlock/syscalls.c",
+      397
+    ],
+    [
+      447,
+      "memfd_secret",
+      "0x1bf",
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      "mm/secretmem.c",
+      231
+    ],
+    [
+      448,
+      "process_mrelease",
+      "0x1c0",
+      {
+        "def": null,
+        "type": "int pidfd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      {},
+      "mm/oom_kill.c",
+      1200
+    ],
+    [
+      449,
+      "futex_waitv",
+      "0x1c1",
+      {
+        "def": null,
+        "type": "struct futex_waitv __user * waiters"
+      },
+      {
+        "def": null,
+        "type": "unsigned int nr_futexes"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "struct __kernel_timespec __user * timeout"
+      },
+      {
+        "def": null,
+        "type": "clockid_t clockid"
+      },
+      {},
+      "kernel/futex/syscalls.c",
+      246
+    ],
+    [
+      450,
+      "set_mempolicy_home_node",
+      "0x1c2",
+      {
+        "def": null,
+        "type": "unsigned long start"
+      },
+      {
+        "def": null,
+        "type": "unsigned long len"
+      },
+      {
+        "def": null,
+        "type": "unsigned long home_node"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      {},
+      "mm/mempolicy.c",
+      1488
+    ],
+    [
+      512,
+      "rt_sigaction",
+      "0x200",
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "const struct sigaction __user * act"
+      },
+      {
+        "def": null,
+        "type": "struct sigaction __user * oact"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      4411
+    ],
+    [
+      513,
+      "rt_sigreturn",
+      "0x201",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "arch/x86/kernel/signal_64.c",
+      243
+    ],
+    [
+      514,
+      "ioctl",
+      "0x202",
+      {
+        "def": null,
+        "type": "unsigned int fd"
+      },
+      {
+        "def": null,
+        "type": "unsigned int cmd"
+      },
+      {
+        "def": null,
+        "type": "unsigned long arg"
+      },
+      {},
+      {},
+      {},
+      "fs/ioctl.c",
+      856
+    ],
+    [
+      515,
+      "readv",
+      "0x203",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      1041
+    ],
+    [
+      516,
+      "writev",
+      "0x204",
+      {
+        "def": null,
+        "type": "unsigned long fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * vec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long vlen"
+      },
+      {},
+      {},
+      {},
+      "fs/read_write.c",
+      1047
+    ],
+    [
+      517,
+      "recvfrom",
+      "0x205",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "void __user * ubuf"
+      },
+      {
+        "def": null,
+        "type": "size_t size"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {
+        "def": null,
+        "type": "struct sockaddr __user * addr"
+      },
+      {
+        "def": null,
+        "type": "int __user * addr_len"
+      },
+      "net/socket.c",
+      2186
+    ],
+    [
+      518,
+      "sendmsg",
+      "0x206",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct user_msghdr __user * msg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2569
+    ],
+    [
+      519,
+      "recvmsg",
+      "0x207",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct user_msghdr __user * msg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      {},
+      "net/socket.c",
+      2777
+    ],
+    [
+      520,
+      "execve",
+      "0x208",
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * argv"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * envp"
+      },
+      {},
+      {},
+      {},
+      "fs/exec.c",
+      2101
+    ],
+    [
+      521,
+      "ptrace",
+      "0x209",
+      {
+        "def": null,
+        "type": "long request"
+      },
+      {
+        "def": null,
+        "type": "long pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned long addr"
+      },
+      {
+        "def": null,
+        "type": "unsigned long data"
+      },
+      {},
+      {},
+      "kernel/ptrace.c",
+      1269
+    ],
+    [
+      522,
+      "rt_sigpending",
+      "0x20a",
+      {
+        "def": null,
+        "type": "sigset_t __user * uset"
+      },
+      {
+        "def": null,
+        "type": "size_t sigsetsize"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3214
+    ],
+    [
+      523,
+      "rt_sigtimedwait",
+      "0x20b",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      524,
+      "rt_sigqueueinfo",
+      "0x20c",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "siginfo_t __user * uinfo"
+      },
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      3997
+    ],
+    [
+      525,
+      "sigaltstack",
+      "0x20d",
+      {
+        "def": null,
+        "type": "const stack_t __user * uss"
+      },
+      {
+        "def": null,
+        "type": "stack_t __user * uoss"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/signal.c",
+      4228
+    ],
+    [
+      526,
+      "timer_create",
+      "0x20e",
+      {
+        "def": null,
+        "type": "const clockid_t which_clock"
+      },
+      {
+        "def": null,
+        "type": "struct sigevent __user * timer_event_spec"
+      },
+      {
+        "def": null,
+        "type": "timer_t __user * created_timer_id"
+      },
+      {},
+      {},
+      {},
+      "kernel/time/posix-timers.c",
+      577
+    ],
+    [
+      527,
+      "mq_notify",
+      "0x20f",
+      {
+        "def": null,
+        "type": "mqd_t mqdes"
+      },
+      {
+        "def": null,
+        "type": "const struct sigevent __user * u_notification"
+      },
+      {},
+      {},
+      {},
+      {},
+      "ipc/mqueue.c",
+      1440
+    ],
+    [
+      528,
+      "kexec_load",
+      "0x210",
+      {
+        "def": null,
+        "type": "unsigned long entry"
+      },
+      {
+        "def": null,
+        "type": "unsigned long nr_segments"
+      },
+      {
+        "def": null,
+        "type": "struct kexec_segment __user * segments"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      {},
+      {},
+      "kernel/kexec.c",
+      228
+    ],
+    [
+      529,
+      "waitid",
+      "0x211",
+      {
+        "def": null,
+        "type": "int which"
+      },
+      {
+        "def": null,
+        "type": "pid_t upid"
+      },
+      {
+        "def": null,
+        "type": "struct siginfo __user * infop"
+      },
+      {
+        "def": null,
+        "type": "int options"
+      },
+      {
+        "def": null,
+        "type": "struct rusage __user * ru"
+      },
+      {},
+      "kernel/exit.c",
+      1700
+    ],
+    [
+      530,
+      "set_robust_list",
+      "0x212",
+      {
+        "def": null,
+        "type": "struct robust_list_head __user * head"
+      },
+      {
+        "def": null,
+        "type": "size_t len"
+      },
+      {},
+      {},
+      {},
+      {},
+      "kernel/futex/syscalls.c",
+      29
+    ],
+    [
+      531,
+      "get_robust_list",
+      "0x213",
+      {
+        "def": null,
+        "type": "int pid"
+      },
+      {
+        "def": null,
+        "type": "struct robust_list_head __user * __user * head_ptr"
+      },
+      {
+        "def": null,
+        "type": "size_t __user * len_ptr"
+      },
+      {},
+      {},
+      {},
+      "kernel/futex/syscalls.c",
+      49
+    ],
+    [
+      532,
+      "vmsplice",
+      "0x214",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * uiov"
+      },
+      {
+        "def": null,
+        "type": "unsigned long nr_segs"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "fs/splice.c",
+      1292
+    ],
+    [
+      533,
+      "move_pages",
+      "0x215",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "unsigned long nr_pages"
+      },
+      {
+        "def": null,
+        "type": "const void __user * __user * pages"
+      },
+      {
+        "def": null,
+        "type": "const int __user * nodes"
+      },
+      {
+        "def": null,
+        "type": "int __user * status"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      "mm/migrate.c",
+      2096
+    ],
+    [
+      534,
+      "preadv",
+      "0x216",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      535,
+      "pwritev",
+      "0x217",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      536,
+      "rt_tgsigqueueinfo",
+      "0x218",
+      {
+        "def": null,
+        "type": "pid_t tgid"
+      },
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "int sig"
+      },
+      {
+        "def": null,
+        "type": "siginfo_t __user * uinfo"
+      },
+      {},
+      {},
+      "kernel/signal.c",
+      4037
+    ],
+    [
+      537,
+      "recvmmsg",
+      "0x219",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      538,
+      "sendmmsg",
+      "0x21a",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "struct mmsghdr __user * mmsg"
+      },
+      {
+        "def": null,
+        "type": "unsigned int vlen"
+      },
+      {
+        "def": null,
+        "type": "unsigned int flags"
+      },
+      {},
+      {},
+      "net/socket.c",
+      2645
+    ],
+    [
+      539,
+      "process_vm_readv",
+      "0x21b",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * lvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long liovcnt"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * rvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long riovcnt"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      "mm/process_vm_access.c",
+      291
+    ],
+    [
+      540,
+      "process_vm_writev",
+      "0x21c",
+      {
+        "def": null,
+        "type": "pid_t pid"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * lvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long liovcnt"
+      },
+      {
+        "def": null,
+        "type": "const struct iovec __user * rvec"
+      },
+      {
+        "def": null,
+        "type": "unsigned long riovcnt"
+      },
+      {
+        "def": null,
+        "type": "unsigned long flags"
+      },
+      "mm/process_vm_access.c",
+      298
+    ],
+    [
+      541,
+      "setsockopt",
+      "0x21d",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int level"
+      },
+      {
+        "def": null,
+        "type": "int optname"
+      },
+      {
+        "def": null,
+        "type": "char __user * optval"
+      },
+      {
+        "def": null,
+        "type": "int optlen"
+      },
+      {},
+      "net/socket.c",
+      2257
+    ],
+    [
+      542,
+      "getsockopt",
+      "0x21e",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "int level"
+      },
+      {
+        "def": null,
+        "type": "int optname"
+      },
+      {
+        "def": null,
+        "type": "char __user * optval"
+      },
+      {
+        "def": null,
+        "type": "int __user * optlen"
+      },
+      {},
+      "net/socket.c",
+      2305
+    ],
+    [
+      543,
+      "io_setup",
+      "0x21f",
+      {
+        "def": null,
+        "type": "unsigned nr_events"
+      },
+      {
+        "def": null,
+        "type": "aio_context_t __user * ctxp"
+      },
+      {},
+      {},
+      {},
+      {},
+      "fs/aio.c",
+      1339
+    ],
+    [
+      544,
+      "io_submit",
+      "0x220",
+      {
+        "def": null,
+        "type": "aio_context_t ctx_id"
+      },
+      {
+        "def": null,
+        "type": "long nr"
+      },
+      {
+        "def": null,
+        "type": "struct iocb __user * __user * iocbpp"
+      },
+      {},
+      {},
+      {},
+      "fs/aio.c",
+      2052
+    ],
+    [
+      545,
+      "execveat",
+      "0x221",
+      {
+        "def": null,
+        "type": "int fd"
+      },
+      {
+        "def": null,
+        "type": "const char __user * filename"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * argv"
+      },
+      {
+        "def": null,
+        "type": "const char __user *const __user * envp"
+      },
+      {
+        "def": null,
+        "type": "int flags"
+      },
+      {},
+      "fs/exec.c",
+      2109
+    ],
+    [
+      546,
+      "preadv2",
+      "0x222",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ],
+    [
+      547,
+      "pwritev2",
+      "0x223",
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "",
+      0
+    ]
+  ]
+}
